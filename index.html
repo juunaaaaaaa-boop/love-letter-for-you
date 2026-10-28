@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09070d">
+  <meta name="description" content="LOVE.exe, tempat kecil buat perasaan yang susah dijelasin.">
+  <title>LOVE.exe ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-heart">♡</div>
+    <p class="tiny">INITIALIZING FEELINGS...</p>
+    <h1>LOVE<span>.exe</span></h1>
+    <p id="loadText">nyiapin keberanian buat confess...</p>
+    <div class="progress"><div id="progressBar"></div></div>
+    <small>hati lagi booting, sabar dikit ♡</small>
+  </div>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+  <div id="particles"></div>
+
+  <header class="topbar">
+    <a href="#" class="logo" data-page="home">♡ LOVE<span>.exe</span></a>
+    <div class="top-actions">
+      <button id="musicBtn" class="glass-btn">♫ <span id="musicText">MUSIC OFF</span></button>
+      <button id="menuBtn" class="glass-btn" aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-head">
+      <span>MENU.exe</span>
+      <button id="closeMenu" class="glass-btn">✕</button>
+    </div>
+    <p class="menu-label">MAIN MENU</p>
+    <button class="nav-item active" data-page="home">⌂ <span>Home</span></button>
+    <button class="nav-item" data-page="confess">♡ <span>Confess Room</span></button>
+    <button class="nav-item" data-page="game">🎮 <span>Love Game</span></button>
+    <button class="nav-item" data-page="doodle">✎ <span>Doodle Studio</span></button>
+    <button class="nav-item" data-page="card">✉ <span>Love Card</span></button>
+    <button class="nav-item" data-page="notes">☁ <span>Love Notes</span></button>
+    <button class="nav-item" data-page="gallery">✧ <span>Memory Gallery</span></button>
+    <button class="nav-item" data-page="about">ⓘ <span>About This Site</span></button>
+    <div class="sidebar-bottom">made with feelings ♡<br><small>version 1.0.0</small></div>
+  </aside>
+  <div id="menuOverlay"></div>
+
+  <main id="app" class="hidden">
+
+    <!-- HOME -->
+    <section class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> A LITTLE WEBSITE FOR SOMEONE</p>
+          <h1>buat kamu,<br><span class="gradient">yang beda.</span></h1>
+          <p class="description">
+            aku nggak jago bikin kata-kata.<br>
+            jadi aku bikin website aja. effort naik, skill gombal masih beta 😭
+          </p>
+          <div class="button-row">
+            <button class="primary-btn" data-page="confess">buka pesan rahasia ↗</button>
+            <button class="secondary-btn" data-page="game">main game dulu 🎮</button>
+          </div>
+          <p class="tiny muted">♡ dibuat dengan kode dan pikiran yang nyasar ke kamu</p>
+        </div>
+        <div class="hero-art">
+          <div class="orbit orbit1"></div>
+          <div class="orbit orbit2"></div>
+          <div class="big-heart">♥</div>
+          <span class="float-star star1">✦</span>
+          <span class="float-star star2">✧</span>
+          <div class="floating-card card-top">you + me? ♡</div>
+          <div class="floating-card card-bottom">99% cute<br><small>1% sok cool</small></div>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE THE WEBSITE</p>
+        <h2>mau ke mana hari ini?</h2>
+        <p>pilih pintu yang kamu mau. jangan masuk hati orang sembarangan, ya.</p>
+      </div>
+
+      <div class="feature-grid">
+        <button class="feature-card" data-page="confess">
+          <span class="feature-icon">💌</span><h3>Confess Room</h3>
+          <p>ada sesuatu yang mau aku bilang...</p><span class="feature-link">buka halaman ↗</span>
+        </button>
+        <button class="feature-card" data-page="game">
+          <span class="feature-icon">🎮</span><h3>Love Game</h3>
+          <p>kumpulin hati, hindari galau.</p><span class="feature-link">main sekarang ↗</span>
+        </button>
+        <button class="feature-card" data-page="doodle">
+          <span class="feature-icon">🎨</span><h3>Doodle Studio</h3>
+          <p>gambar apa pun yang ada di pikiran.</p><span class="feature-link">mulai gambar ↗</span>
+        </button>
+        <button class="feature-card" data-page="card">
+          <span class="feature-icon">💝</span><h3>Love Card</h3>
+          <p>bikin kartu pesan spesial sendiri.</p><span class="feature-link">bikin kartu ↗</span>
+        </button>
+        <button class="feature-card" data-page="notes">
+          <span class="feature-icon">☁️</span><h3>Love Notes</h3>
+          <p>kalimat kecil buat hari yang besar.</p><span class="feature-link">baca pesan ↗</span>
+        </button>
+        <button class="feature-card" data-page="gallery">
+          <span class="feature-icon">🌙</span><h3>Memory Gallery</h3>
+          <p>tempat nyimpen kenangan dan pesan.</p><span class="feature-link">lihat galeri ↗</span>
+        </button>
+      </div>
+      <div class="quote-banner glass">
+        <span>“</span>
+        <p>kalau senyum kamu bisa dijadiin wallpaper, kayaknya baterai aku bakal awet karena HP-nya nggak pernah dikunci.</p>
+        <small>— orang yang sok puitis malam ini</small>
+      </div>
+    </section>
+
+    <!-- CONFESS -->
+    <section class="page" id="page-confess">
+      <div class="page-heading">
+        <p class="eyebrow">01 / CONFESSION ROOM</p>
+        <h1>ada yang mau aku bilang<span class="pink">...</span></h1>
+        <p>tenang, ini bukan surat tagihan. tarik napas dulu 😭</p>
+      </div>
+      <div class="letter glass">
+        <div class="letter-icon">♡</div>
+        <p class="eyebrow">DEAR, SOMEONE SPECIAL</p>
+        <h2>kamu pernah nggak, sih?</h2>
+        <p>lagi ngapa-ngapain, terus tiba-tiba kepikiran seseorang? nah, akhir-akhir ini orang itu kamu.</p>
+        <p>aneh ya. kamu cuma jadi diri sendiri, tapi bisa bikin hari biasa terasa beda. chat singkat dari kamu aja kadang bisa bikin aku senyum sendiri. malu juga kalau ketahuan, harga diri bisa logout.</p>
+        <p>aku nggak janji bakal selalu punya kata-kata manis. kadang aku random, kadang receh, kadang kirim meme yang bahkan aku sendiri nggak ngerti kenapa lucu.</p>
+        <p>tapi aku pengin kenal kamu lebih jauh. pengin denger cerita kamu, nemenin kamu ketawa, dan jadi seseorang yang bikin hari kamu sedikit lebih baik.</p>
+        <h3>jadi... boleh aku punya kesempatan? 💗</h3>
+        <div class="button-row answer-buttons">
+          <button id="yesBtn" class="primary-btn">MAU 💗</button>
+          <button id="noBtn" class="secondary-btn">belum dulu 🙈</button>
+        </div>
+        <p id="confessResult" class="result-text"></p>
+        <small class="muted">apapun jawabanmu, perasaan nggak perlu dipaksa ♡</small>
+      </div>
+    </section>
+
+    <!-- GAME -->
+    <section class="page" id="page-game">
+      <div class="page-heading">
+        <p class="eyebrow">02 / MINI ADVENTURE</p>
+        <h1>tuntun bola cinta <span class="pink">♡</span></h1>
+        <p>ambil lima hati, terus cari portal. jangan sampai kena friendzone maze.</p>
+      </div>
+      <div class="game-layout">
+        <div class="panel glass">
+          <div class="game-status"><span>HEARTS <b id="heartCount">0 / 5</b></span><span>STATUS <b id="gameStatus">READY</b></span></div>
+          <canvas id="gameCanvas" width="400" height="400"></canvas>
+          <div class="dpad">
+            <button data-dir="up">↑</button>
+            <button data-dir="left">←</button>
+            <button data-dir="down">↓</button>
+            <button data-dir="right">→</button>
+          </div>
+          <p id="gameMessage" class="result-text">WASD, tombol panah, atau tombol di layar. gaskeun!</p>
+          <button id="resetGame" class="secondary-btn">ulang game ↻</button>
+        </div>
+        <div class="panel glass">
+          <div class="feature-icon">🗺️</div><h2>misi hari ini</h2>
+          <ol class="mission-list">
+            <li>kumpulin 5 hati pink.</li><li>jangan nabrak tembok.</li><li>masuk ke portal ungu.</li>
+          </ol>
+          <div class="tip-box">tips: bolanya nggak punya SIM. bantuin belok ya, jangan cuma ditatap.</div>
+          <p class="muted tiny">game ini bisa dimainkan di HP dan komputer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOODLE -->
+    <section class="page" id="page-doodle">
+      <div class="page-heading">
+        <p class="eyebrow">03 / DOODLE STUDIO</p>
+        <h1>coret-coret dulu <span class="pink">✎</span></h1>
+        <p>nggak harus jago gambar. stickman juga berhak bahagia.</p>
+      </div>
+      <div class="panel glass">
+        <div class="toolbar">
+          <label>warna <input id="brushColor" type="color" value="#ff5ca8"></label>
+          <label>ukuran <input id="brushSize" type="range" min="2" max="30" value="6"><span id="brushValue">6 px</span></label>
+          <button id="eraserBtn" class="secondary-btn">penghapus</button>
+          <button id="clearDrawing" class="secondary-btn">bersihin</button>
+          <button id="downloadDrawing" class="primary-btn">unduh PNG ↓</button>
+        </div>
+        <canvas id="drawingCanvas" width="900" height="500"></canvas>
+        <p class="muted tiny">pakai jari juga bisa. gambar kamu nggak bakal di-judge di sini.</p>
+      </div>
+    </section>
+
+    <!-- CARD CREATOR -->
+    <section class="page" id="page-card">
+      <div class="page-heading">
+        <p class="eyebrow">04 / LITTLE LOVE CARD</p>
+        <h1>bikin kartu buat dia <span class="pink">✉</span></h1>
+        <p>tulis pesan, pilih warna, tambah stiker, terus download. effort digital, bestie.</p>
+      </div>
+      <div class="creator-layout">
+        <div class="panel glass editor-controls">
+          <label>judul kartu</label>
+          <input id="cardTitle" maxlength="55" value="for someone special ♡">
+          <label>pesan kamu</label>
+          <textarea id="cardMessage" rows="5" maxlength="350">kalau hari kamu lagi berat, semoga kamu ingat kalau ada seseorang yang berharap kamu baik-baik aja. iya, aku. jangan ge-er dulu... dikit aja 💗</textarea>
+          <label>warna kartu</label>
+          <div class="swatches">
+            <button data-color="#21101f" style="--c:#21101f" class="swatch active"></button>
+            <button data-color="#4a1838" style="--c:#4a1838" class="swatch"></button>
+            <button data-color="#162333" style="--c:#162333" class="swatch"></button>
+            <button data-color="#492327" style="--c:#492327" class="swatch"></button>
+            <button data-color="#f6dce9" style="--c:#f6dce9" class="swatch"></button>
+          </div>
+          <label>pilih stiker</label>
+          <div class="stickers">
+            <button data-sticker="♥">♥</button><button data-sticker="🐱">🐱</button>
+            <button data-sticker="🎀">🎀</button><button data-sticker="🌷">🌷</button>
+            <button data-sticker="✦">✦</button><button data-sticker="♡">♡</button>
+          </div>
+          <button id="downloadCard" class="primary-btn full-width">unduh kartu PNG ↓</button>
+          <p class="muted tiny">geser stiker buat mindahin. ketuk dua kali buat menghapusnya.</p>
+        </div>
+        <div>
+          <div id="messageCard" class="message-card" style="--card-bg:#21101f">
+            <div class="card-kicker">A LITTLE NOTE FOR YOU <span>♡</span></div>
+            <h2 id="previewTitle">for someone special ♡</h2>
+            <p id="previewMessage">kalau hari kamu lagi berat, semoga kamu ingat kalau ada seseorang yang berharap kamu baik-baik aja. iya, aku. jangan ge-er dulu... dikit aja 💗</p>
+            <div class="card-footer">made with a little courage ✦</div>
+            <div id="stickerLayer"></div>
+          </div>
+          <p class="tiny muted center">preview kartu kamu</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOVE NOTES -->
+    <section class="page" id="page-notes">
+      <div class="page-heading">
+        <p class="eyebrow">05 / LITTLE REMINDERS</p>
+        <h1>pesan kecil buat kamu <span class="pink">☁</span></h1>
+        <p>kalau hari lagi nggak bersahabat, pilih satu kartu.</p>
+      </div>
+      <div class="notes-grid">
+        <article class="note-card glass"><span>🌷</span><h3>buat hari yang berat</h3><p>nggak semua hari harus produktif. kadang berhasil bangun dan bertahan sampai malam juga udah pencapaian. pelan-pelan aja, ya.</p></article>
+        <article class="note-card glass"><span>💗</span><h3>buat kamu yang dirindukan</h3><p>ada orang yang mungkin nggak selalu bilang kangen, tapi tetap senang tiap nama kamu muncul di layar. ya... mungkin orang itu aku.</p></article>
+        <article class="note-card glass"><span>🌙</span><h3>sebelum tidur</h3><p>istirahat ya. dunia bisa nunggu besok. tugas juga bisa nunggu... eh, yang ini cek deadline dulu deh 😭</p></article>
+        <article class="note-card glass"><span>🫶</span><h3>buat pengingat diri</h3><p>kamu nggak harus sempurna buat layak disayang. jadi diri sendiri aja, upgrade pelan-pelan kalau kamu mau.</p></article>
+        <article class="note-card glass"><span>✨</span><h3>random fact</h3><p>kalau senyum bisa menghasilkan listrik, kayaknya kamu bisa jadi pembangkit listrik nasional.</p></article>
+        <article class="note-card glass"><span>🐈</span><h3>pesan dari kucing</h3><p>meow. artinya: jangan overthinking. makan dulu, minum dulu, baru overthinking lagi kalau masih sempat.</p></article>
+      </div>
+      <div class="quote-banner glass"><span>♡</span><p id="randomQuote">klik tombol di bawah buat dapet pesan random.</p><button id="randomNote" class="primary-btn">kasih aku pesan random ✨</button></div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="page" id="page-gallery">
+      <div class="page-heading">
+        <p class="eyebrow">06 / MEMORY GALLERY</p>
+        <h1>tempat nyimpen cerita <span class="pink">✧</span></h1>
+        <p>galeri kecil buat momen yang pengin kamu simpan.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-tile tile-pink"><span>♡</span><h3>the little things</h3><p>hal kecil yang ternyata berarti.</p></div>
+        <div class="gallery-tile tile-purple"><span>☾</span><h3>late night talks</h3><p>obrolan random yang bikin lupa waktu.</p></div>
+        <div class="gallery-tile tile-blue"><span>✦</span><h3>favorite memories</h3><p>momen yang pengin diputar ulang.</p></div>
+        <div class="gallery-tile tile-red"><span>♥</span><h3>you, probably</h3><p>iya, kamu lagi. siapa lagi coba?</p></div>
+      </div>
+      <div class="panel glass gallery-message">
+        <h2>punya foto kenangan?</h2>
+        <p>kamu bisa pilih foto dari HP untuk melihatnya di sini. fotonya cuma ditampilkan di browser, nggak di-upload ke server.</p>
+        <label class="primary-btn upload-label">pilih foto dari HP ↗ <input type="file" id="photoUpload" accept="image/*" multiple hidden></label>
+        <div id="uploadedGallery" class="uploaded-gallery"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page" id="page-about">
+      <div class="page-heading">
+        <p class="eyebrow">07 / ABOUT LOVE.exe</p>
+        <h1>sebenarnya ini apa? <span class="pink">ⓘ</span></h1>
+        <p>sedikit penjelasan sebelum kamu mengira ini website NASA.</p>
+      </div>
+      <div class="about-card glass">
+        <div class="about-logo">♡</div>
+        <h2>LOVE<span class="pink">.exe</span></h2>
+        <p>sebuah website kecil yang dibuat buat menyampaikan perasaan dengan cara yang sedikit beda. ada surat, game mini, doodle, kartu pesan, dan beberapa pengingat manis.</p>
+        <p>nggak perlu login. nggak perlu bikin akun. nggak perlu bilang “aku bukan robot” karena di sini yang robot cuma kodenya.</p>
+        <div class="about-stats"><div><b>08</b><span>halaman</span></div><div><b>04</b><span>fitur utama</span></div><div><b>∞</b><span>kemungkinan salting</span></div></div>
+        <button class="primary-btn" data-page="home">balik ke home ↗</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-heart">♡</div>
+      <p>dibuat dengan kode, kopi imajiner, dan pikiran yang nyasar ke kamu.</p>
+      <small>LOVE.exe • made with a little courage</small>
+      <button data-page="home" class="text-link">balik ke atas ↑</button>
+    </footer>
+  </main>
+
+  <div id="celebration" class="celebration hidden">
+    <div class="celebration-box glass">
+      <div class="celebration-heart">💗</div>
+      <p class="eyebrow">NEW ACHIEVEMENT UNLOCKED</p>
+      <h2>YAY, KAMU MAU!?</h2>
+      <p>aku berusaha tetap cool, tapi sistem internal sedang salto.</p>
+      <button id="closeCelebration" class="primary-btn">lanjut salting ✨</button>
+    </div>
+    <div id="confetti"></div>
+  </div>
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+  
